@@ -1,8 +1,11 @@
 let Main = document.querySelector(".container");
+let header = document.querySelector(".name_header")
 let req = new XMLHttpRequest();
 req.open("GET", "https://api.github.com/users/ochanya");
 req.addEventListener("load",function(){
   let obj = JSON.parse(req.response);
+    header.innerHTML=`<h1>${obj.login}</h1>`
+
     Main.innerHTML= `
     <div class="sections">
       <div class="">
