@@ -1,0 +1,32 @@
+.name_header{
+  background-color: black;
+  color: white;
+  border-bottom-style: dashed 1px grey;
+  padding: 30px;
+  text-align: center;
+}
+.container{
+  display:flex;
+  justify-content: center;
+
+}
+.sections{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  padding-top: 40px;
+}
+.sections div{
+  flex:1;
+
+}
+.img-circle{
+  border-radius: 50%;
+  width:50%;
+}
+.no-bullets{
+list-style: none;
+display: flex;
+flex-direction: column;
+justify-content: flex-start;
+}
